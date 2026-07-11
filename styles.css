@@ -10,6 +10,10 @@
     background-color: #1d4ed8;
     color: #ffffff;
 }
+/* .container {
+    max-width: 1321px;
+    margin: auto;
+} */
 
 /* Navbar Style */
 nav {
@@ -18,9 +22,9 @@ nav {
     align-items: center;
     margin: 20px 8%;
     flex: 1;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     margin: 0;
-    padding: 23px 7.4%;
+    padding: 23px 7.5%;
 }
 
 nav div img {
@@ -57,4 +61,60 @@ nav div button {
     outline: none;
     font-weight: 700;
     line-height: 1.5;
+}
+
+/* Hero Section Style */
+.hero-section-parent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("./assets/banner.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    gap: 278px;
+}
+
+.hero-section-child {
+    text-align: center;
+}
+
+.hero-section-child div {
+    margin-top: 16px;
+    /* border: 1px solid black; */
+    /* margin-bottom: 160px */
+    /* padding-bottom: 8px; */
+}
+
+.hero-section-child div h1 {
+    color: #ffffff;
+    font-size: 80px;
+    font-weight: 700;
+    letter-spacing: -3.2px;
+}
+
+.hero-section-child p {
+    margin-top: 16px;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.09;
+    letter-spacing: 0;
+    /* padding: 0 350px; */
+    max-width: 800px;
+}
+
+.hero-section-child .common {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0;
+    padding: 25px 62.5px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
 }

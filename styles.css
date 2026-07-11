@@ -118,3 +118,107 @@ nav div button {
     border: none;
     outline: none;
 }
+
+/* Speaker Section Styles */
+.speaker-section {
+    margin-bottom: 43px;
+}
+
+.speaker-section h2 {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 56px;
+    color: #000102;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.15;
+}
+.speaker-card-parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0px 7.5%;
+    gap: 32px;
+    padding-bottom: 136px;
+}
+
+.speaker-card {
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    overflow: hidden;
+}
+
+.speaker-details {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.speaker-category {
+    color: #2563eb;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+}
+
+.speaker-name {
+    color: #0d1b2a;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.375;
+    letter-spacing: 0px;
+}
+
+.speaker-title {
+    color: #575757;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0px;
+}
+
+.speaker-image img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.pricing-section div {
+    text-align: center;
+}
+
+.pricing-card-parent {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+.pricing-card {
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 32px;
+}
+
+.price-quote p,
+h3 {
+    text-align: left;
+}
+
+.pricing-card ul {
+    text-align: left;
+}
+
+.plan-name {
+    color: #888888;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+    text-transform: uppercase;
+}

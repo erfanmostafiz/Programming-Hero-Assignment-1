@@ -9,6 +9,8 @@
 .common {
     background-color: #1d4ed8;
     color: #ffffff;
+    border: none;
+    outline: none;
 }
 /* .container {
     max-width: 1321px;
@@ -27,8 +29,9 @@ nav {
     padding: 23px 7.5%;
 }
 
-nav div img {
-    /* border: 2px solid black; */
+.container div img {
+    /* height: 100%;
+    width: auto; */
 }
 
 nav div ul {
@@ -185,6 +188,31 @@ nav div button {
     object-fit: cover;
 }
 
+/* Pricing Section Styling */
+.pricing-section {
+    padding-bottom: 80px;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-bottom: 50px;
+    margin-left: 55px;
+    margin-right: 55px;
+}
+.pricing-section div h2 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.25;
+    color: #0d1b2a;
+    margin-bottom: 12px;
+}
+
+.pricing-section div p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.25;
+    color: #575757;
+    margin-bottom: 12px;
+}
+
 .pricing-section div {
     text-align: center;
 }
@@ -194,6 +222,7 @@ nav div button {
     gap: 24px;
     justify-content: center;
     align-items: center;
+    padding-top: 48px;
 }
 
 .pricing-card {
@@ -203,6 +232,9 @@ nav div button {
     flex-direction: column;
     gap: 20px;
     padding: 32px;
+    flex: 1 1 360px;
+    max-width: 300px;
+    /* max-width: 407px; */
 }
 
 .price-quote p,
@@ -221,4 +253,97 @@ h3 {
     line-height: 1.5;
     letter-spacing: 0.32px;
     text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.plan-limit {
+    color: #888888;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0px;
+    margin-top: 4px;
+}
+
+.price-quote h3 {
+    color: #0d1b2a;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0px;
+}
+
+hr {
+    border: none; /* Removes default browser shading */
+    height: 1px; /* Sets explicit thickness */
+    background-color: #e5e7eb; /* Fills the line with a solid color */
+}
+
+.list-parent {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* border: 1px solid blueviolet; */
+    list-style-position: inside;
+}
+
+ul li::marker {
+    color: #2563eb; /* Changes only the bullet color */
+}
+
+ul li {
+    color: #333333; /* Keeps text a different color */
+}
+
+.pricing-card button {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 0px;
+    padding: 11px 0;
+    border-radius: 8px;
+}
+
+.btn-standard {
+    border: 1px solid #2563eb;
+    background-color: white;
+    color: #2563eb;
+}
+
+.btn-team {
+    border: 1px solid #0d1b2a;
+    background-color: white;
+    color: #0d1b2a;
+}
+
+.recommended {
+    background-color: #0d1b2a;
+    border: 1px solid #0d1b2a;
+}
+
+.recommended .plan-name {
+    color: #93c5fd;
+}
+
+.recommended h3 {
+    color: #ffffff;
+}
+
+.recommended .plan-limit {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.recommended .list-parent li {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.recommended hr {
+    border: none; /* Removes default browser shading */
+    height: 1px; /* Sets explicit thickness */
+    background-color: rgba(
+        255,
+        255,
+        255,
+        0.1
+    ); /* Fills the line with a solid color */
 }

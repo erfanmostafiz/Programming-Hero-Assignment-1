@@ -11,11 +11,19 @@
     color: #ffffff;
     border: none;
     outline: none;
+    cursor: pointer;
 }
 /* .container {
     max-width: 1321px;
     margin: auto;
 } */
+button:hover {
+    /* background-color: #ced9f7; */
+    transform: translateY(-2px);
+}
+button {
+    transition: all 0.3s ease;
+}
 
 /* Navbar Style */
 nav {
@@ -231,6 +239,47 @@ nav div button {
     font-weight: 700;
 }
 
+/* Venue filter */
+.venue-filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+
+    margin-bottom: 45px;
+}
+
+.venue-filter span {
+    color: #c9c9c9;
+    font-size: 1.4rem;
+    user-select: none;
+}
+
+.venue-btn {
+    background: none;
+    border: none;
+
+    cursor: pointer;
+
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    font-size: 0.95rem;
+    font-weight: 700;
+
+    color: #6b7280;
+
+    transition: 0.25s;
+}
+
+.venue-btn:hover {
+    color: #1d4ed8;
+}
+
+.venue-btn.active {
+    color: #1d4ed8;
+}
+
 /* Pricing Section Styling */
 .pricing-section {
     padding-bottom: 80px;
@@ -345,6 +394,7 @@ ul li {
     letter-spacing: 0px;
     padding: 11px 0;
     border-radius: 8px;
+    cursor: pointer;
 }
 
 .btn-standard {
@@ -392,6 +442,14 @@ ul li {
 }
 
 /* Placeholder section style */
+
+img.andrej {
+    object-position: 80% center;
+}
+
+img.demis {
+    object-position: 95% center;
+}
 .schedule-section {
     padding: 110px 8%;
     background: #ffffff;
@@ -523,6 +581,47 @@ ul li {
 
 .details p {
     color: #6b7280;
+}
+
+/* Venue filter */
+.venue-filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+
+    margin-bottom: 45px;
+}
+
+.venue-filter span {
+    color: #c9c9c9;
+    font-size: 1.4rem;
+    user-select: none;
+}
+
+.venue-btn {
+    background: none;
+    border: none;
+
+    cursor: pointer;
+
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    font-size: 0.95rem;
+    font-weight: 700;
+
+    color: #6b7280;
+
+    transition: 0.25s;
+}
+
+.venue-btn:hover {
+    color: #1d4ed8;
+}
+
+.venue-btn.active {
+    color: #1d4ed8;
 }
 
 /* Footer Section style */

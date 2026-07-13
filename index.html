@@ -210,26 +210,44 @@
                         <h2>Plan Your Two Days</h2>
                         <p>
                             Explore keynotes, workshops and technical talks
-                            across two dedicated venues.
+                            across two dedicated venues
                         </p>
                     </div>
 
                     <div class="schedule-tabs">
                         <button class="tab active" data-day="day1">
                             Day 1
-                            <span>Aug 15</span>
+                            <span>Sep 05</span>
                         </button>
 
                         <button class="tab" data-day="day2">
                             Day 2
-                            <span>Aug 16</span>
+                            <span>Sep 06</span>
+                        </button>
+                    </div>
+
+                    <div class="venue-filter">
+                        <button class="venue-btn active" data-venue="all">
+                            All Locations
+                        </button>
+
+                        <span>|</span>
+
+                        <button class="venue-btn" data-venue="hall-of-fame">
+                            Hall of Fame
+                        </button>
+
+                        <span>|</span>
+
+                        <button class="venue-btn" data-venue="main-auditorium">
+                            Main Auditorium
                         </button>
                     </div>
 
                     <!-- DAY 1 -->
 
                     <div class="schedule-content active" id="day1">
-                        <div class="schedule-item">
+                        <div class="schedule-item" data-venue="hall-of-fame">
                             <div class="time">
                                 <span>09:00 AM</span>
                             </div>
@@ -243,6 +261,7 @@
 
                             <div class="speaker">
                                 <img
+                                    class="andrej"
                                     src="./assets/andrej.png"
                                     alt="Andrej Karpathy"
                                 />
@@ -254,7 +273,7 @@
                             </div>
                         </div>
 
-                        <div class="schedule-item">
+                        <div class="schedule-item" data-venue="main-auditorium">
                             <div class="time">
                                 <span>10:30 AM</span>
                             </div>
@@ -279,7 +298,7 @@
                             </div>
                         </div>
 
-                        <div class="schedule-item">
+                        <div class="schedule-item" data-venue="hall-of-fame">
                             <div class="time">
                                 <span>01:00 PM</span>
                             </div>
@@ -293,6 +312,7 @@
 
                             <div class="speaker">
                                 <img
+                                    class="demis"
                                     src="./assets/demis.png"
                                     alt="Demis Hassabis"
                                 />
@@ -304,7 +324,7 @@
                             </div>
                         </div>
 
-                        <div class="schedule-item">
+                        <div class="schedule-item" data-venue="main-auditorium">
                             <div class="time">
                                 <span>03:30 PM</span>
                             </div>
@@ -333,7 +353,7 @@
                     <!-- DAY 2 -->
 
                     <div class="schedule-content" id="day2">
-                        <div class="schedule-item">
+                        <div class="schedule-item" data-venue="main-auditorium">
                             <div class="time">
                                 <span>09:00 AM</span>
                             </div>
@@ -358,7 +378,7 @@
                             </div>
                         </div>
 
-                        <div class="schedule-item">
+                        <div class="schedule-item" data-venue="hall-of-fame">
                             <div class="time">
                                 <span>11:00 AM</span>
                             </div>
@@ -372,6 +392,7 @@
 
                             <div class="speaker">
                                 <img
+                                    class="andrej"
                                     src="./assets/andrej.png"
                                     alt="Andrej Karpathy"
                                 />
@@ -383,7 +404,7 @@
                             </div>
                         </div>
 
-                        <div class="schedule-item">
+                        <div class="schedule-item" data-venue="main-auditorium">
                             <div class="time">
                                 <span>01:30 PM</span>
                             </div>
@@ -408,7 +429,7 @@
                             </div>
                         </div>
 
-                        <div class="schedule-item">
+                        <div class="schedule-item" data-venue="hall-of-fame">
                             <div class="time">
                                 <span>03:30 PM</span>
                             </div>
@@ -422,6 +443,7 @@
 
                             <div class="speaker">
                                 <img
+                                    class="demis"
                                     src="./assets/demis.png"
                                     alt="Demis Hassabis"
                                 />

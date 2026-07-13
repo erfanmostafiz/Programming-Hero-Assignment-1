@@ -9,5 +9,43 @@ tabs.forEach((tab) => {
         tab.classList.add("active");
 
         document.getElementById(tab.dataset.day).classList.add("active");
+        venueButtons.forEach((btn) => btn.classList.remove("active"));
+
+        venueButtons[0].classList.add("active");
+
+        document
+            .querySelectorAll(".schedule-content.active .schedule-item")
+            .forEach((item) => {
+                item.style.display = "grid";
+            });
+    });
+});
+
+const venueButtons = document.querySelectorAll(".venue-btn");
+
+venueButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+        venueButtons.forEach((btn) => btn.classList.remove("active"));
+        button.classList.add("active");
+
+        const selectedVenue = button.dataset.venue;
+
+        // Only filter the currently visible day
+        const activeSchedule = document.querySelector(
+            ".schedule-content.active",
+        );
+
+        const items = activeSchedule.querySelectorAll(".schedule-item");
+
+        items.forEach((item) => {
+            if (
+                selectedVenue === "all" ||
+                item.dataset.venue === selectedVenue
+            ) {
+                item.style.display = "grid";
+            } else {
+                item.style.display = "none";
+            }
+        });
     });
 });

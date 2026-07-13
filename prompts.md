@@ -12,3 +12,15 @@ A user should be able to sort by through the venues (follow the screenshot provi
 
 Prompt 5:
 The pictures of Andrej and Demis are a bit off from the frame. How do I fix this in css?
+
+Prompt 6:
+I think the schedule section is missing a bit more interactivity. Suggest one or two small UI improvements that fit the DevConf 2026 design without changing the overall layout. The improvements should make the section feel more polished and professional.
+
+Prompt 7:
+Let's implement two improvements: (1) Clicking a session opens a small modal with a description, and (2) each session should display a colored badge such as Keynote, Workshop, Panel, or Talk. Keep the design consistent with the existing DevConf 2026 landing page and provide the required HTML, CSS, and JavaScript (just the changes)
+
+Promot 8:
+Show me where to add the session badges inside my existing HTML structure. Also, provide appropriate badge types and descriptions for every session in the two-day schedule.
+
+Prompt 9:
+After these improvements, do you think this AI-generated section is strong enough for the assignment? Evaluate it based on creativity, visual consistency with the rest of the landing page, and effective use of AI, and suggest one or two small improvements if necessary.

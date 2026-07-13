@@ -1,3 +1,6 @@
+// PLEASE NOTE:
+// JavaScript code is only for the placeholder section for interactivity. AI has been used with guided prompts directing to the final outcome I want, to create this javascript code. All the other sections do not have any Javascript code.
+
 const tabs = document.querySelectorAll(".tab");
 const schedules = document.querySelectorAll(".schedule-content");
 

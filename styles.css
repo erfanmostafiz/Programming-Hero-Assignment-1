@@ -443,6 +443,41 @@ ul li {
 
 /* Placeholder section style */
 
+.session-badge {
+    display: inline-block;
+
+    margin-bottom: 10px;
+    padding: 5px 12px;
+
+    border-radius: 30px;
+
+    font-size: 0.72rem;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+}
+
+.keynote {
+    background: #e8f0ff;
+    color: #2f5bff;
+}
+
+.workshop {
+    background: #e7f8ef;
+    color: #0d8b4b;
+}
+
+.panel {
+    background: #fff4e5;
+    color: #c76a00;
+}
+
+.talk {
+    background: #f3ebff;
+    color: #7a3cff;
+}
+
 img.andrej {
     object-position: 80% center;
 }
@@ -537,6 +572,7 @@ img.demis {
 }
 
 .schedule-item {
+    cursor: pointer;
     display: grid;
     grid-template-columns: 160px 170px 1fr 220px;
     align-items: center;
@@ -622,6 +658,70 @@ img.demis {
 
 .venue-btn.active {
     color: #1d4ed8;
+}
+
+/* Modal CSS */
+.session-modal {
+    position: fixed;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.55);
+
+    display: none;
+
+    justify-content: center;
+    align-items: center;
+
+    z-index: 1000;
+}
+
+.session-modal.show {
+    display: flex;
+}
+
+.modal-content {
+    width: 520px;
+    background: white;
+
+    border-radius: 18px;
+
+    padding: 40px;
+
+    position: relative;
+
+    animation: popup 0.25s ease;
+}
+
+.close-modal {
+    position: absolute;
+
+    top: 20px;
+    right: 25px;
+
+    font-size: 2rem;
+
+    cursor: pointer;
+}
+
+.modal-content h2 {
+    margin-bottom: 18px;
+}
+
+.modal-content p {
+    line-height: 1.8;
+    color: #6b7280;
+}
+
+@keyframes popup {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
 /* Footer Section style */

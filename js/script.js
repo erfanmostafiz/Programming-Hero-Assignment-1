@@ -52,3 +52,32 @@ venueButtons.forEach((button) => {
         });
     });
 });
+
+// Modal:
+const modal = document.getElementById("sessionModal");
+
+const modalTitle = document.getElementById("modalTitle");
+
+const modalDescription = document.getElementById("modalDescription");
+
+const closeModal = document.querySelector(".close-modal");
+
+document.querySelectorAll(".schedule-item").forEach((item) => {
+    item.addEventListener("click", () => {
+        modalTitle.textContent = item.querySelector("h3").textContent;
+
+        modalDescription.textContent = item.dataset.description;
+
+        modal.classList.add("show");
+    });
+});
+
+closeModal.addEventListener("click", () => {
+    modal.classList.remove("show");
+});
+
+modal.addEventListener("click", (e) => {
+    if (e.target === modal) {
+        modal.classList.remove("show");
+    }
+});

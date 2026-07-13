@@ -188,6 +188,49 @@ nav div button {
     object-fit: cover;
 }
 
+.speaker {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 14px;
+
+    width: 220px; /* same as your grid column */
+}
+
+.speaker img {
+    width: 60px;
+    height: 60px;
+
+    border-radius: 50%;
+    object-fit: cover;
+
+    border: 3px solid #bacfff;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.speaker-info {
+    text-align: left;
+}
+
+.speaker-info span {
+    display: block;
+
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+
+    color: #1d4ed8;
+    font-weight: 700;
+
+    margin-bottom: 4px;
+}
+
+.speaker-info h4 {
+    font-size: 0.95rem;
+    color: #111827;
+    font-weight: 700;
+}
+
 /* Pricing Section Styling */
 .pricing-section {
     padding-bottom: 80px;
@@ -365,7 +408,7 @@ ul li {
 }
 
 .section-tag {
-    color: #2f5bff;
+    color: #1d4ed8;
     font-size: 0.8rem;
     font-weight: 700;
     text-transform: uppercase;
@@ -414,13 +457,13 @@ ul li {
 }
 
 .tab:hover {
-    border-color: #2f5bff;
+    border-color: #1d4ed8;
 }
 
 .tab.active {
-    background: #2f5bff;
+    background: #1d4ed8;
     color: white;
-    border-color: #2f5bff;
+    border-color: #1d4ed8;
 }
 
 .tab.active span {
@@ -437,7 +480,7 @@ ul li {
 
 .schedule-item {
     display: grid;
-    grid-template-columns: 170px 180px 1fr;
+    grid-template-columns: 160px 170px 1fr 220px;
     align-items: center;
 
     padding: 30px;
@@ -459,7 +502,7 @@ ul li {
     display: inline-block;
 
     background: #eef3ff;
-    color: #2f5bff;
+    color: #1d4ed8;
 
     padding: 8px 18px;
     border-radius: 30px;
